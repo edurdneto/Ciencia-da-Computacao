@@ -4,24 +4,20 @@
 
 | Data | Aula | Tema | Entregas |
 |---|---|---|---|
-| Semana 1 | 01 | [Introdução a bancos de dados e SGBDs](aulas/01-introducao.md) | |
-| Semana 2 | 02 | [SQL: consultas básicas](aulas/02-sql-consultas.md) | [Lista 01](listas/lista-01.md) |
-| Semana 3 | 03 | Modelo Entidade-Relacionamento (ER) | |
-| Semana 4 | 04 | ER: cardinalidades, entidades fracas, especialização | Lista 02 |
-| Semana 5 | 05 | Modelo relacional e restrições de integridade | |
-| Semana 6 | 06 | Mapeamento ER → relacional | |
-| Semana 7 | 07 | Álgebra relacional | Lista 03 |
-| Semana 8 | — | **Prova 1** | |
-| Semana 9 | 08 | SQL DDL: criando e alterando tabelas | |
-| Semana 10 | 09 | SQL DML: INSERT, UPDATE, DELETE | |
-| Semana 11 | 10 | SQL: junções (JOIN) | Lista 04 |
-| Semana 12 | 11 | SQL: agregação, GROUP BY e HAVING | |
-| Semana 13 | 12 | SQL: subconsultas e visões | Lista 05 |
-| Semana 14 | 13 | Dependências funcionais e normalização | Projeto |
-| Semana 15 | 14 | Noções de transações e índices | |
+| Semana 1 | 01 | [Apresentação da disciplina e ambiente de prática](aulas/01-introducao.md) | |
+| Semana 2 | 02 | [Fundamentos de bancos de dados e SGBDs](aulas/02-fundamentos-sgbd.md) | |
+| Semana 3 | 03 | Modelos de dados, arquitetura de três esquemas e independência de dados | |
+| Semana 4 | 04 | Modelo Entidade-Relacionamento (ER) | |
+| Semana 5 | 05 | ER: cardinalidades, entidades fracas, especialização | Lista 01 |
+| Semana 6 | 06 | Modelo relacional e restrições de integridade | |
+| Semana 7 | 07 | Mapeamento ER → relacional | |
+| Semana 8 | 08 | Álgebra relacional | Lista 02 |
+| Semana 9 | — | **Prova 1** | |
+| Semana 10 | 09 | SQL: DDL e DML (criar tabelas, inserir, alterar, remover) | |
+| Semana 11 | 10 | [SQL: consultas básicas](aulas/10-sql-consultas.md) | [Lista 03](listas/lista-03.md) |
+| Semana 12 | 11 | SQL: junções (JOIN) | |
+| Semana 13 | 12 | SQL: agregação, GROUP BY e HAVING | Lista 04 |
+| Semana 14 | 13 | SQL: subconsultas e visões | |
+| Semana 15 | 14 | Dependências funcionais e normalização | Lista 05 · Projeto |
 | Semana 16 | — | **Prova 2** | |
 | Semana 17 | — | Recuperação / exame final | |
-
-!!! note "Por que SQL logo na aula 02?"
-    Ver consultas funcionando cedo ajuda a entender *para que* serve a modelagem. Depois voltamos à teoria (ER, modelo relacional, álgebra) e aprofundamos o SQL na segunda metade.
-    <!-- PROFESSOR: se preferir a ordem tradicional (modelagem antes de SQL), basta reordenar as linhas. -->

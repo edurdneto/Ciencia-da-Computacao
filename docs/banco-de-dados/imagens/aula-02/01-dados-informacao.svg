@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">De dados a decisão</title>
+  <desc id="d">Vendas de 50, 100 e 150 unidades são dados. Somadas por produto e período viram a informação "300 unidades em 3 dias", que apoia a decisão de aumentar a reposição.</desc>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="878" height="298" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- Dados -->
+  <rect x="24" y="40" width="180" height="150" rx="10" fill="#e8f0fb" stroke="#2f5fa7" stroke-width="1.5"/>
+  <text x="114" y="68" text-anchor="middle" font-size="17" font-weight="700" fill="#1e3a6e">Dados</text>
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5" fill="#1f2937">
+    <text x="44" y="98">seg · Teclado · 50</text>
+    <text x="44" y="122">ter · Teclado · 100</text>
+    <text x="44" y="146">qua · Teclado · 150</text>
+  </g>
+  <text x="114" y="176" text-anchor="middle" font-size="12" fill="#4b5563" font-style="italic">registros soltos</text>
+
+  <!-- Processamento -->
+  <rect x="244" y="40" width="180" height="150" rx="10" fill="#fff4dc" stroke="#c98a12" stroke-width="1.5"/>
+  <text x="334" y="68" text-anchor="middle" font-size="17" font-weight="700" fill="#7a5208">Processamento</text>
+  <text x="334" y="104" text-anchor="middle" font-size="14" fill="#1f2937">organizar, relacionar,</text>
+  <text x="334" y="124" text-anchor="middle" font-size="14" fill="#1f2937">calcular, analisar</text>
+  <text x="334" y="160" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="14" fill="#1f2937">50 + 100 + 150</text>
+
+  <!-- Informação -->
+  <rect x="464" y="40" width="180" height="150" rx="10" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.5"/>
+  <text x="554" y="68" text-anchor="middle" font-size="17" font-weight="700" fill="#1d5634">Informação</text>
+  <text x="554" y="106" text-anchor="middle" font-size="22" font-weight="700" fill="#1d5634">300 unidades</text>
+  <text x="554" y="130" text-anchor="middle" font-size="14" fill="#1f2937">de teclado vendidas</text>
+  <text x="554" y="150" text-anchor="middle" font-size="14" fill="#1f2937">em 3 dias</text>
+  <text x="554" y="176" text-anchor="middle" font-size="12" fill="#4b5563" font-style="italic">resultado com contexto</text>
+
+  <!-- Decisão -->
+  <rect x="684" y="40" width="172" height="150" rx="10" fill="#f1eafb" stroke="#6b46c1" stroke-width="1.5"/>
+  <text x="770" y="68" text-anchor="middle" font-size="17" font-weight="700" fill="#4c2f91">Decisão</text>
+  <text x="770" y="106" text-anchor="middle" font-size="14" fill="#1f2937">Aumentar o pedido</text>
+  <text x="770" y="126" text-anchor="middle" font-size="14" fill="#1f2937">de reposição</text>
+  <text x="770" y="176" text-anchor="middle" font-size="12" fill="#4b5563" font-style="italic">ação de uma pessoa</text>
+
+  <g stroke="#6b7280" stroke-width="2" marker-end="url(#seta)">
+    <line x1="206" y1="115" x2="240" y2="115"/>
+    <line x1="426" y1="115" x2="460" y2="115"/>
+    <line x1="646" y1="115" x2="680" y2="115"/>
+  </g>
+
+  <!-- faixa inferior -->
+  <rect x="24" y="214" width="620" height="60" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-dasharray="5 4"/>
+  <text x="334" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2937">O que o banco de dados e o SGBD fazem</text>
+  <text x="334" y="261" text-anchor="middle" font-size="13" fill="#4b5563">guardam os dados e executam o processamento que gera a informação</text>
+  <rect x="684" y="214" width="172" height="60" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-dasharray="5 4"/>
+  <text x="770" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2937">Fora do SGBD</text>
+  <text x="770" y="261" text-anchor="middle" font-size="13" fill="#4b5563">quem decide é o gestor</text>
+</svg>

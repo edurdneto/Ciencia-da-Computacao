@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Arquivos isolados versus banco de dados compartilhado</title>
+  <desc id="d">À esquerda, Vendas, Produção e Engenharia têm cada um seu programa e seu arquivo, com cópias divergentes do mesmo produto. À direita, os três programas acessam um único banco de dados por meio do SGBD, com uma única versão do produto.</desc>
+  <defs>
+    <marker id="s4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="878" height="468" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- ===== Esquerda ===== -->
+  <rect x="20" y="20" width="410" height="430" rx="12" fill="#fdf3f2" stroke="#e8b4ae"/>
+  <text x="225" y="50" text-anchor="middle" font-size="17" font-weight="700" fill="#9b2c22">Arquivos isolados</text>
+
+  <g font-size="13.5">
+    <!-- coluna 1 -->
+    <rect x="36" y="70" width="118" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="95" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Vendas</text>
+    <rect x="160" y="70" width="118" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="219" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Produção</text>
+    <rect x="284" y="70" width="130" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="349" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Engenharia</text>
+
+    <rect x="36" y="140" width="118" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="95" y="165" text-anchor="middle" fill="#1e3a6e">programa A</text>
+    <rect x="160" y="140" width="118" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="219" y="165" text-anchor="middle" fill="#1e3a6e">programa B</text>
+    <rect x="284" y="140" width="130" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="349" y="165" text-anchor="middle" fill="#1e3a6e">programa C</text>
+  </g>
+  <g stroke="#6b7280" stroke-width="1.8" marker-end="url(#s4)">
+    <line x1="95" y1="112" x2="95" y2="136"/><line x1="219" y1="112" x2="219" y2="136"/><line x1="349" y1="112" x2="349" y2="136"/>
+    <line x1="95" y1="182" x2="95" y2="206"/><line x1="219" y1="182" x2="219" y2="206"/><line x1="349" y1="182" x2="349" y2="206"/>
+  </g>
+
+  <!-- arquivos -->
+  <g font-size="12.5">
+    <path d="M36,210 h96 l22,22 v120 h-118 z" fill="#ffffff" stroke="#9ca3af"/>
+    <path d="M132,210 v22 h22" fill="none" stroke="#9ca3af"/>
+    <text x="46" y="230" font-weight="700" fill="#4b5563">vendas.csv</text>
+    <text x="46" y="262" fill="#1f2937">Teclado TC60</text>
+    <text x="46" y="282" font-weight="700" fill="#9b2c22">R$ 85,00</text>
+    <text x="46" y="310" fill="#1f2937">cliente…</text>
+
+    <path d="M160,210 h96 l22,22 v120 h-118 z" fill="#ffffff" stroke="#9ca3af"/>
+    <path d="M256,210 v22 h22" fill="none" stroke="#9ca3af"/>
+    <text x="170" y="230" font-weight="700" fill="#4b5563">estoque.xlsx</text>
+    <text x="170" y="262" fill="#1f2937">Teclado TC60</text>
+    <text x="170" y="282" font-weight="700" fill="#9b2c22">R$ 79,00</text>
+    <text x="170" y="310" fill="#1f2937">qtd: 12</text>
+
+    <path d="M284,210 h108 l22,22 v120 h-130 z" fill="#ffffff" stroke="#9ca3af"/>
+    <path d="M392,210 v22 h22" fill="none" stroke="#9ca3af"/>
+    <text x="294" y="230" font-weight="700" fill="#4b5563">pecas.dat</text>
+    <text x="294" y="262" fill="#1f2937">Teclado TC-60</text>
+    <text x="294" y="282" font-weight="700" fill="#9b2c22">cód. antigo 0071</text>
+    <text x="294" y="310" fill="#1f2937">fornecedor…</text>
+  </g>
+
+  <g font-size="13" fill="#9b2c22">
+    <text x="36" y="384" font-weight="700">✗ o mesmo produto repetido 3 vezes</text>
+    <text x="36" y="406" font-weight="700">✗ cópias divergentes (inconsistência)</text>
+    <text x="36" y="428" font-weight="700">✗ cada programa conhece o formato do arquivo</text>
+  </g>
+
+  <!-- ===== Direita ===== -->
+  <rect x="450" y="20" width="410" height="430" rx="12" fill="#f0f8f3" stroke="#a9d5b8"/>
+  <text x="655" y="50" text-anchor="middle" font-size="17" font-weight="700" fill="#1d5634">Banco de dados com SGBD</text>
+
+  <g font-size="13.5">
+    <rect x="466" y="70" width="118" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="525" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Vendas</text>
+    <rect x="590" y="70" width="118" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="649" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Produção</text>
+    <rect x="714" y="70" width="130" height="40" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="779" y="95" text-anchor="middle" font-weight="700" fill="#1f2937">Engenharia</text>
+
+    <rect x="466" y="140" width="118" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="525" y="165" text-anchor="middle" fill="#1e3a6e">programa A</text>
+    <rect x="590" y="140" width="118" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="649" y="165" text-anchor="middle" fill="#1e3a6e">programa B</text>
+    <rect x="714" y="140" width="130" height="40" rx="8" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <text x="779" y="165" text-anchor="middle" fill="#1e3a6e">programa C</text>
+
+    <rect x="530" y="208" width="250" height="42" rx="8" fill="#fff4dc" stroke="#c98a12" stroke-width="1.5"/>
+    <text x="655" y="234" text-anchor="middle" font-weight="700" fill="#7a5208">SGBD</text>
+  </g>
+  <g stroke="#6b7280" stroke-width="1.8" marker-end="url(#s4)">
+    <line x1="525" y1="112" x2="525" y2="136"/><line x1="649" y1="112" x2="649" y2="136"/><line x1="779" y1="112" x2="779" y2="136"/>
+    <line x1="525" y1="182" x2="590" y2="205"/><line x1="649" y1="182" x2="652" y2="205"/><line x1="779" y1="182" x2="718" y2="205"/>
+    <line x1="655" y1="252" x2="655" y2="268"/>
+  </g>
+
+  <!-- cilindro único -->
+  <path d="M545,282 v70 a110,15 0 0 0 220,0 v-70" fill="#e6f4ea" stroke="#2e7d4f" stroke-width="1.5"/>
+  <ellipse cx="655" cy="282" rx="110" ry="15" fill="#d3ecdc" stroke="#2e7d4f" stroke-width="1.5"/>
+  <g font-size="12.5" fill="#1f2937">
+    <text x="655" y="316" text-anchor="middle" font-weight="700">PRODUTO · cód. 0071</text>
+    <text x="655" y="336" text-anchor="middle">Teclado TC60 · <tspan font-weight="700" fill="#1d5634">R$ 85,00</tspan></text>
+    <text x="655" y="356" text-anchor="middle" fill="#4b5563">+ estoque, fornecedor, vendas…</text>
+  </g>
+
+  <g font-size="13" fill="#1d5634">
+    <text x="466" y="406" font-weight="700">✓ cada fato guardado uma vez</text>
+    <text x="466" y="428" font-weight="700">✓ todos veem o mesmo valor atualizado</text>
+  </g>
+</svg>

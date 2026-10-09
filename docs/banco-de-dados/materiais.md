@@ -10,8 +10,9 @@ Arquivos grandes (acima de ~20 MB): prefira as Releases do GitHub ou o Google Dr
 
 | Aula | Tema | Slides |
 |---|---|---|
-| 01 | Introdução a bancos de dados | em breve |
-| 02 | SQL: consultas básicas | em breve |
+| 01 | Apresentação da disciplina e ambiente | em breve |
+| 02 | Fundamentos de bancos de dados e SGBDs | em breve |
+| 10 | SQL: consultas básicas | em breve |
 
 ## Scripts
 
