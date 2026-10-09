@@ -1,8 +1,6 @@
 # Sobre o professor
 
-<!-- PROFESSOR: troque [Seu nome completo] pelo seu nome. -->
-
-<p style="font-size: 1.15em; margin-bottom: 0.2em"><strong>Prof. Dr. [Seu nome completo]</strong></p>
+<p style="font-size: 1.15em; margin-bottom: 0.2em"><strong>Prof. Dr. Eduardo Rodrigues Duarte Neto</strong></p>
 <p style="margin-top: 0">
 Doutor (PhD) em Ciência da Computação<br>
 Professor da <strong>Unichristus</strong> · Pesquisador Sênior no <strong>LSBD</strong> — Laboratório de Sistemas e Banco de Dados
@@ -18,7 +16,7 @@ Em sala de aula, procuro aproximar a teoria da prática: os conceitos de cada di
 
 | Nível | Curso | Instituição |
 |---|---|---|
-| Doutorado (PhD) | Ciência da Computação | [instituição] |
+| Doutorado (PhD) | Ciência da Computação | Universidade Federal do Ceará (UFC) |
 | Mestrado | Banco de Dados — pesquisa em privacidade de dados | Universidade Federal do Ceará (UFC) |
 | Graduação | Ciência da Computação | Universidade Federal do Ceará (UFC) |
 
@@ -53,7 +51,7 @@ Em sala de aula, procuro aproximar a teoria da prática: os conceitos de cada di
 
 ## Contato
 
-- :material-email: E-mail: [seu e-mail institucional]
+- :material-email: E-mail: [edurduarteneto@gmail.com](mailto:edurduarteneto@gmail.com)
 - :material-clock-outline: Atendimento: [dia e horário, sala ou link]
 - :material-github: GitHub: [edurdneto](https://github.com/edurdneto)
 
