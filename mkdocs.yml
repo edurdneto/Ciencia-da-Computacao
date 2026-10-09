@@ -1,0 +1,100 @@
+site_name: Ciência da Computação
+site_description: Aulas, vídeos, materiais, códigos e listas de exercícios das disciplinas de Sistemas Operacionais e Fundamentos de Banco de Dados.
+site_url: https://edurdneto.github.io/Ciencia-da-Computacao/
+repo_url: https://github.com/edurdneto/Ciencia-da-Computacao
+repo_name: edurdneto/Ciencia-da-Computacao
+edit_uri: edit/main/docs/
+copyright: Material didático das disciplinas de Sistemas Operacionais e Fundamentos de Banco de Dados
+
+theme:
+  name: material
+  language: pt-BR
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Mudar para modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Início:
+      - index.md
+      - Sobre o professor: sobre.md
+      - Como usar este site: como-usar.md
+  - Sistemas Operacionais:
+      - sistemas-operacionais/index.md
+      - Cronograma: sistemas-operacionais/cronograma.md
+      - Aulas:
+          - "Aula 01 · Introdução aos SOs": sistemas-operacionais/aulas/01-introducao.md
+          - "Aula 02 · Processos": sistemas-operacionais/aulas/02-processos.md
+      - Listas de exercícios:
+          - "Lista 01 · Processos": sistemas-operacionais/listas/lista-01.md
+      - Materiais: sistemas-operacionais/materiais.md
+  - Banco de Dados:
+      - banco-de-dados/index.md
+      - Cronograma: banco-de-dados/cronograma.md
+      - Aulas:
+          - "Aula 01 · Introdução a BD": banco-de-dados/aulas/01-introducao.md
+          - "Aula 02 · SQL: consultas básicas": banco-de-dados/aulas/02-sql-consultas.md
+      - Listas de exercícios:
+          - "Lista 01 · SQL básico": banco-de-dados/listas/lista-01.md
+      - Materiais: banco-de-dados/materiais.md
