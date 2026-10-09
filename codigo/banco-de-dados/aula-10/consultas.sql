@@ -1,5 +1,5 @@
 -- =====================================================================
--- Aula 02 — SQL: consultas básicas
+-- Aula 10 — SQL: consultas básicas
 -- Execute antes o script ../universidade.sql para criar o banco.
 --
 --   psql -d universidade -f consultas.sql

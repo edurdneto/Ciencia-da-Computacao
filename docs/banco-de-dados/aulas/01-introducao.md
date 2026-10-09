@@ -1,78 +1,58 @@
-# Aula 01 · Introdução a Bancos de Dados
+# Aula 01 · Apresentação da disciplina e ambiente de prática
 
 <div class="resumo-aula" markdown>
 [:material-file-pdf-box: Slides (em breve)](#){ .md-button }
-[:material-arrow-right: Próxima: SQL básico](02-sql-consultas.md){ .md-button .md-button--primary }
+[:material-arrow-right: Próxima: Fundamentos de BD e SGBDs](02-fundamentos-sgbd.md){ .md-button .md-button--primary }
 </div>
 
 !!! abstract "Objetivos"
-    - Diferenciar **dado**, **informação**, **banco de dados** e **SGBD**.
-    - Entender os problemas de guardar dados em arquivos comuns.
-    - Conhecer a arquitetura em três níveis e a independência de dados.
-    - Instalar o PostgreSQL e carregar o banco de exemplo.
+    - Conhecer a ementa, o cronograma e a forma de avaliação da disciplina.
+    - Saber onde encontrar aulas, materiais, códigos e listas neste site.
+    - Instalar o PostgreSQL e carregar o banco de exemplo usado nas aulas.
 
 ## Vídeo da aula
 
 !!! note "Vídeo em breve"
     A gravação desta aula será publicada aqui.
 
-## 1. Conceitos básicos
+## 1. Como a disciplina funciona
 
-| Termo | Definição | Exemplo |
-|---|---|---|
-| **Dado** | Fato bruto, sem contexto | `8.5` |
-| **Informação** | Dado com significado | "Lucas tirou 8,5 em Programação I" |
-| **Banco de dados** | Coleção organizada de dados relacionados | Os dados acadêmicos da universidade |
-| **SGBD** | Software que cria, mantém e dá acesso ao banco | PostgreSQL, MySQL, Oracle, SQLite |
+- **Ementa, objetivos, avaliação e bibliografia:** na [página da disciplina](../index.md).
+- **Datas das aulas, listas e provas:** no [cronograma](../cronograma.md).
+- **Cada aula** tem o texto completo, o vídeo (quando houver), os slides e exercícios de fixação.
+- **Listas avaliadas** ficam em *Listas de exercícios*, no menu à esquerda.
 
-## 2. Por que não usar planilhas ou arquivos?
-
-Imagine a secretaria guardando tudo em várias planilhas. Problemas que aparecem:
-
-- **Redundância e inconsistência:** o endereço do aluno está em 3 planilhas; alguém atualiza só uma.
-- **Dificuldade de acesso:** "quais alunos de Fortaleza têm média abaixo de 5?" exige trabalho manual.
-- **Integridade:** nada impede uma nota 15 ou uma matrícula num curso que não existe.
-- **Acesso concorrente:** duas pessoas editando o mesmo arquivo ao mesmo tempo perdem alterações.
-- **Segurança:** é difícil permitir que o aluno veja só as próprias notas.
-
-Um SGBD resolve isso com uma linguagem de consulta (SQL), restrições de integridade, controle de concorrência, recuperação após falhas e controle de acesso.
-
-## 3. Arquitetura em três níveis
+A disciplina segue um caminho em três etapas:
 
 ```mermaid
-flowchart TB
-    subgraph Externo["Nível externo (visões)"]
-        V1["Visão do aluno"]
-        V2["Visão da secretaria"]
-        V3["Visão do professor"]
-    end
-    C["Nível conceitual<br/>(tabelas, colunas, relacionamentos)"]
-    I["Nível interno<br/>(arquivos, índices, blocos no disco)"]
-    V1 & V2 & V3 --> C --> I
+flowchart LR
+    A["<b>Fundamentos</b><br/>dados, SGBDs,<br/>modelos de dados"] --> B["<b>Modelagem</b><br/>modelo ER,<br/>modelo relacional,<br/>álgebra relacional"]
+    B --> C["<b>Implementação</b><br/>SQL e<br/>normalização"]
 ```
 
-- **Independência lógica:** mudar o nível conceitual (ex.: acrescentar uma coluna) sem quebrar as visões dos usuários.
-- **Independência física:** mudar como os dados são armazenados (ex.: criar um índice) sem mudar o esquema conceitual.
+## 2. Preparando o ambiente
 
-## 4. Preparando o ambiente
+Usaremos o **PostgreSQL**, um SGBD relacional gratuito e muito usado no mercado.
 
 1. Instale o PostgreSQL ([instruções na página da disciplina](../index.md#ambiente-de-pratica)).
-2. Baixe o script [`universidade.sql`](https://github.com/edurdneto/Ciencia-da-Computacao/blob/main/codigo/banco-de-dados/universidade.sql).
+2. Baixe o script [`universidade.sql`](https://github.com/edurdneto/Ciencia-da-Computacao/blob/main/codigo/banco-de-dados/universidade.sql) — o banco de exemplo das aulas.
 3. Crie e carregue o banco:
     ```bash
     createdb universidade
     psql -d universidade -f universidade.sql
     ```
-4. Teste: abra `psql -d universidade` e rode `SELECT * FROM curso;`.
+4. Teste: abra `psql -d universidade` e rode:
+    ```sql
+    SELECT * FROM curso;
+    ```
+    Se aparecerem três cursos, está tudo certo.
 
 !!! tip "Comandos úteis do `psql`"
     `\dt` lista as tabelas · `\d aluno` mostra a estrutura da tabela `aluno` · `\q` sai.
 
-## Para praticar
+!!! question "Não conseguiu instalar?"
+    Sem problema para começar: nas primeiras aulas o foco é conceitual. Até a aula de SQL, use o [DB Fiddle](https://www.db-fiddle.com/) (escolha PostgreSQL e cole o script) ou procure o professor no horário de atendimento.
 
-1. Cite um sistema que você usa no dia a dia e que certamente usa um banco de dados. Que dados ele guarda?
-2. Dê um exemplo de inconsistência que poderia acontecer se a universidade guardasse os dados em planilhas separadas.
+## Para a próxima aula
 
-## Leitura recomendada
-
-- Elmasri & Navathe, *Sistemas de Banco de Dados*, capítulos 1 e 2.
+Pense em um sistema que você usa todo dia (banco, rede social, sistema acadêmico, delivery). **Que dados ele guarda? Quem usa esses dados?** Vamos usar esses exemplos na [Aula 02](02-fundamentos-sgbd.md).

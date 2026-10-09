@@ -33,3 +33,35 @@
 .md-typeset table:not([class]) td:first-child {
   white-space: nowrap;
 }
+
+/* Selo "Aprofundamento" nas aulas */
+.selo {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: #6b46c1;
+  color: #fff;
+  border-radius: 1em;
+  padding: 0.15em 0.75em;
+  margin-bottom: 0.4em;
+}
+
+/* Figuras das aulas: largura total, legenda discreta */
+.md-typeset figure img {
+  border-radius: 0.5rem;
+}
+.md-typeset figcaption {
+  max-width: 42rem;
+  margin-top: 0.4em;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset figure img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+}
+
+/* Figuras clicáveis abrem em tamanho cheio */
+.md-typeset figure a:has(img) { cursor: zoom-in; }

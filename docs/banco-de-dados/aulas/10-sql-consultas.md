@@ -1,9 +1,9 @@
-# Aula 02 · SQL: consultas básicas
+# Aula 10 · SQL: consultas básicas
 
 <div class="resumo-aula" markdown>
 [:material-file-pdf-box: Slides (em breve)](#){ .md-button }
-[:material-github: Código da aula](https://github.com/edurdneto/Ciencia-da-Computacao/tree/main/codigo/banco-de-dados/aula-02){ .md-button }
-[:material-pencil: Lista 01](../listas/lista-01.md){ .md-button .md-button--primary }
+[:material-github: Código da aula](https://github.com/edurdneto/Ciencia-da-Computacao/tree/main/codigo/banco-de-dados/aula-10){ .md-button }
+[:material-pencil: Lista 03](../listas/lista-03.md){ .md-button .md-button--primary }
 </div>
 
 !!! abstract "Objetivos"
@@ -19,7 +19,7 @@
 <!--
 PROFESSOR: troque o bloco "Vídeo em breve" por:
 <div class="video">
-  <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="Aula 02 · SQL" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="Aula 10 · SQL" allowfullscreen></iframe>
 </div>
 -->
 
@@ -205,9 +205,9 @@ ORDER BY colunas;   -- em que ORDEM (opcional)
 
 O arquivo completo, para rodar de uma vez com `psql -d universidade -f consultas.sql`:
 
-??? example "codigo/banco-de-dados/aula-02/consultas.sql"
+??? example "codigo/banco-de-dados/aula-10/consultas.sql"
     ```sql linenums="1"
-    --8<-- "codigo/banco-de-dados/aula-02/consultas.sql"
+    --8<-- "codigo/banco-de-dados/aula-10/consultas.sql"
     ```
 
 ## Para praticar
@@ -227,7 +227,7 @@ O arquivo completo, para rodar de uma vez com `psql -d universidade -f consultas
     SELECT nome FROM aluno WHERE nome LIKE 'L%';
     ```
 
-Os exercícios avaliados estão na [Lista 01](../listas/lista-01.md).
+Os exercícios avaliados estão na [Lista 03](../listas/lista-03.md).
 
 ## Leitura recomendada
 

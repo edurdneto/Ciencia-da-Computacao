@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Oito vantagens de um SGBD</title>
+  <desc id="d">Controle de redundância, restrição de acesso, armazenamento eficiente, processamento de consultas, tolerância a falhas e recuperação, múltiplas interfaces, relacionamentos e restrições de integridade.</desc>
+  <rect x="1" y="1" width="878" height="418" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- centro -->
+  <rect x="330" y="172" width="220" height="76" rx="38" fill="#2f5fa7"/>
+  <text x="440" y="204" text-anchor="middle" font-size="18" font-weight="700" fill="#ffffff">SGBD</text>
+  <text x="440" y="226" text-anchor="middle" font-size="13" fill="#dbe7f8">8 vantagens</text>
+
+  <g stroke="#c7d2e3" stroke-width="1.5">
+    <line x1="330" y1="200" x2="236" y2="80"/><line x1="380" y1="174" x2="400" y2="120"/>
+    <line x1="500" y1="174" x2="480" y2="120"/><line x1="550" y1="200" x2="644" y2="80"/>
+    <line x1="330" y1="220" x2="236" y2="340"/><line x1="380" y1="246" x2="400" y2="300"/>
+    <line x1="500" y1="246" x2="480" y2="300"/><line x1="550" y1="220" x2="644" y2="340"/>
+  </g>
+
+  <!-- linha de cima -->
+  <g>
+    <rect x="24" y="24" width="200" height="104" rx="10" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <circle cx="48" cy="50" r="14" fill="#2f5fa7"/><text x="48" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">1</text>
+    <text x="70" y="55" font-size="14" font-weight="700" fill="#1e3a6e">Controle de</text>
+    <text x="40" y="76" font-size="14" font-weight="700" fill="#1e3a6e">redundância</text>
+    <text x="40" y="100" font-size="12" fill="#4b5563">cada fato guardado uma vez,</text>
+    <text x="40" y="116" font-size="12" fill="#4b5563">sem cópias divergentes</text>
+
+    <rect x="240" y="24" width="190" height="104" rx="10" fill="#fdecec" stroke="#c0392b"/>
+    <circle cx="264" cy="50" r="14" fill="#c0392b"/><text x="264" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">2</text>
+    <text x="286" y="55" font-size="14" font-weight="700" fill="#9b2c22">Restrição</text>
+    <text x="256" y="76" font-size="14" font-weight="700" fill="#9b2c22">de acesso</text>
+    <text x="256" y="100" font-size="12" fill="#4b5563">cada perfil vê e altera</text>
+    <text x="256" y="116" font-size="12" fill="#4b5563">só o que pode</text>
+
+    <rect x="450" y="24" width="190" height="104" rx="10" fill="#fff4dc" stroke="#c98a12"/>
+    <circle cx="474" cy="50" r="14" fill="#c98a12"/><text x="474" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">3</text>
+    <text x="496" y="55" font-size="14" font-weight="700" fill="#7a5208">Armazenamento</text>
+    <text x="466" y="76" font-size="14" font-weight="700" fill="#7a5208">eficiente</text>
+    <text x="466" y="100" font-size="12" fill="#4b5563">índices e estruturas que</text>
+    <text x="466" y="116" font-size="12" fill="#4b5563">evitam ler tudo</text>
+
+    <rect x="656" y="24" width="200" height="104" rx="10" fill="#f1eafb" stroke="#6b46c1"/>
+    <circle cx="680" cy="50" r="14" fill="#6b46c1"/><text x="680" y="55" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">4</text>
+    <text x="702" y="55" font-size="14" font-weight="700" fill="#4c2f91">Processamento</text>
+    <text x="672" y="76" font-size="14" font-weight="700" fill="#4c2f91">de consultas</text>
+    <text x="672" y="100" font-size="12" fill="#4b5563">o otimizador escolhe</text>
+    <text x="672" y="116" font-size="12" fill="#4b5563">como executar</text>
+  </g>
+
+  <!-- linha de baixo -->
+  <g>
+    <rect x="24" y="292" width="200" height="104" rx="10" fill="#e6f4ea" stroke="#2e7d4f"/>
+    <circle cx="48" cy="318" r="14" fill="#2e7d4f"/><text x="48" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">5</text>
+    <text x="70" y="323" font-size="14" font-weight="700" fill="#1d5634">Tolerância a falhas</text>
+    <text x="40" y="344" font-size="14" font-weight="700" fill="#1d5634">e recuperação</text>
+    <text x="40" y="368" font-size="12" fill="#4b5563">log, transações e backup</text>
+    <text x="40" y="384" font-size="12" fill="#4b5563">restauram um estado válido</text>
+
+    <rect x="240" y="292" width="190" height="104" rx="10" fill="#e8f0fb" stroke="#2f5fa7"/>
+    <circle cx="264" cy="318" r="14" fill="#2f5fa7"/><text x="264" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">6</text>
+    <text x="286" y="323" font-size="14" font-weight="700" fill="#1e3a6e">Múltiplas</text>
+    <text x="256" y="344" font-size="14" font-weight="700" fill="#1e3a6e">interfaces</text>
+    <text x="256" y="368" font-size="12" fill="#4b5563">terminal SQL, telas,</text>
+    <text x="256" y="384" font-size="12" fill="#4b5563">relatórios, APIs</text>
+
+    <rect x="450" y="292" width="190" height="104" rx="10" fill="#fff4dc" stroke="#c98a12"/>
+    <circle cx="474" cy="318" r="14" fill="#c98a12"/><text x="474" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">7</text>
+    <text x="496" y="323" font-size="14" font-weight="700" fill="#7a5208">Relacionamentos</text>
+    <text x="466" y="344" font-size="14" font-weight="700" fill="#7a5208">entre dados</text>
+    <text x="466" y="368" font-size="12" fill="#4b5563">venda ↔ cliente ↔ filial</text>
+    <text x="466" y="384" font-size="12" fill="#4b5563">ligados por referências</text>
+
+    <rect x="656" y="292" width="200" height="104" rx="10" fill="#fdecec" stroke="#c0392b"/>
+    <circle cx="680" cy="318" r="14" fill="#c0392b"/><text x="680" y="323" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">8</text>
+    <text x="702" y="323" font-size="14" font-weight="700" fill="#9b2c22">Restrições de</text>
+    <text x="672" y="344" font-size="14" font-weight="700" fill="#9b2c22">integridade</text>
+    <text x="672" y="368" font-size="12" fill="#4b5563">regras que bloqueiam</text>
+    <text x="672" y="384" font-size="12" fill="#4b5563">dados inválidos</text>
+  </g>
+</svg>

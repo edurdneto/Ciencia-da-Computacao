@@ -40,6 +40,11 @@ theme:
     - content.tabs.link
     - content.action.edit
 
+# Links e âncoras quebrados viram erro no build (--strict)
+validation:
+  links:
+    anchors: warn
+
 plugins:
   - search:
       lang: pt
@@ -93,8 +98,9 @@ nav:
       - banco-de-dados/index.md
       - Cronograma: banco-de-dados/cronograma.md
       - Aulas:
-          - "Aula 01 · Introdução a BD": banco-de-dados/aulas/01-introducao.md
-          - "Aula 02 · SQL: consultas básicas": banco-de-dados/aulas/02-sql-consultas.md
+          - "Aula 01 · Apresentação e ambiente": banco-de-dados/aulas/01-introducao.md
+          - "Aula 02 · Fundamentos de BD e SGBDs": banco-de-dados/aulas/02-fundamentos-sgbd.md
+          - "Aula 10 · SQL: consultas básicas": banco-de-dados/aulas/10-sql-consultas.md
       - Listas de exercícios:
-          - "Lista 01 · SQL básico": banco-de-dados/listas/lista-01.md
+          - "Lista 03 · SQL básico": banco-de-dados/listas/lista-03.md
       - Materiais: banco-de-dados/materiais.md

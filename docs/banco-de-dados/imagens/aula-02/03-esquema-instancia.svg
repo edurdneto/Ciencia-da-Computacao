@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="400" viewBox="0 0 880 400" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Esquema e instância</title>
+  <desc id="d">O esquema PRODUTO com id, nome e preço fica no catálogo e muda raramente. A instância são as linhas da tabela: às 9h o mouse custa 39,90; às 15h, depois de um UPDATE, custa 42,90. O esquema continua igual.</desc>
+  <defs>
+    <marker id="s3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="878" height="398" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+
+  <!-- Esquema -->
+  <rect x="24" y="24" width="270" height="350" rx="12" fill="#e8f0fb" stroke="#2f5fa7" stroke-width="1.5"/>
+  <text x="159" y="54" text-anchor="middle" font-size="17" font-weight="700" fill="#1e3a6e">Esquema</text>
+  <text x="159" y="74" text-anchor="middle" font-size="12.5" fill="#4b5563">guardado no catálogo como metadados</text>
+  <rect x="44" y="92" width="230" height="150" rx="8" fill="#ffffff" stroke="#9db8e3"/>
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="13" fill="#1f2937">
+    <text x="58" y="118" font-weight="700" fill="#1e3a6e">PRODUTO</text>
+    <text x="58" y="146">id</text><text x="112" y="146">INTEGER <tspan fill="#b45309">PK</tspan></text>
+    <text x="58" y="172">nome</text><text x="112" y="172">VARCHAR(120)</text>
+    <text x="58" y="198">preco</text><text x="112" y="198">NUMERIC(10,2)</text>
+    <text x="58" y="224" fill="#4b5563">CHECK (preco &gt;= 0)</text>
+  </g>
+  <text x="159" y="276" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2937">Muda raramente</text>
+  <text x="159" y="298" text-anchor="middle" font-size="12.5" fill="#4b5563">só com comandos de definição</text>
+  <text x="159" y="316" text-anchor="middle" font-size="12.5" fill="#4b5563">(CREATE / ALTER TABLE)</text>
+  <text x="159" y="350" text-anchor="middle" font-size="12.5" fill="#1e3a6e" font-style="italic">"o que os dados significam"</text>
+
+  <!-- seta esquema -> instâncias -->
+  <line x1="298" y1="200" x2="330" y2="200" stroke="#6b7280" stroke-width="2" marker-end="url(#s3)"/>
+
+  <!-- Instância 1 -->
+  <text x="474" y="54" text-anchor="middle" font-size="17" font-weight="700" fill="#1d5634">Instância às 9h</text>
+  <g font-size="13.5">
+    <rect x="336" y="72" width="276" height="34" fill="#2e7d4f"/>
+    <g fill="#ffffff" font-weight="700"><text x="356" y="94">id</text><text x="404" y="94">nome</text><text x="596" y="94" text-anchor="end">preco</text></g>
+    <rect x="336" y="106" width="276" height="34" fill="#f3faf5" stroke="#cfe8d8"/>
+    <rect x="336" y="140" width="276" height="34" fill="#ffffff" stroke="#cfe8d8"/>
+    <g fill="#1f2937"><text x="356" y="128">1</text><text x="404" y="128">Teclado</text><text x="596" y="128" text-anchor="end">79,90</text>
+    <text x="356" y="162">2</text><text x="404" y="162">Mouse</text><text x="596" y="162" text-anchor="end">39,90</text></g>
+  </g>
+
+  <!-- Instância 2 -->
+  <text x="474" y="230" text-anchor="middle" font-size="17" font-weight="700" fill="#1d5634">Instância às 15h</text>
+  <g font-size="13.5">
+    <rect x="336" y="248" width="276" height="34" fill="#2e7d4f"/>
+    <g fill="#ffffff" font-weight="700"><text x="356" y="270">id</text><text x="404" y="270">nome</text><text x="596" y="270" text-anchor="end">preco</text></g>
+    <rect x="336" y="282" width="276" height="34" fill="#f3faf5" stroke="#cfe8d8"/>
+    <rect x="336" y="316" width="276" height="34" fill="#fff4dc" stroke="#e3b867" stroke-width="1.5"/>
+    <g fill="#1f2937"><text x="356" y="304">1</text><text x="404" y="304">Teclado</text><text x="596" y="304" text-anchor="end">79,90</text>
+    <text x="356" y="338">2</text><text x="404" y="338">Mouse</text><text x="596" y="338" text-anchor="end" font-weight="700" fill="#9a5b00">42,90</text></g>
+  </g>
+
+  <!-- seta de tempo -->
+  <path d="M474,182 v34" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#s3)"/>
+  <rect x="652" y="160" width="206" height="78" rx="8" fill="#fff4dc" stroke="#c98a12"/>
+  <g font-family="'JetBrains Mono', Consolas, monospace" font-size="12.5" fill="#1f2937">
+    <text x="668" y="184">UPDATE produto</text>
+    <text x="668" y="204">SET preco = 42.90</text>
+    <text x="668" y="224">WHERE id = 2;</text>
+  </g>
+  <line x1="652" y1="199" x2="486" y2="199" stroke="#c98a12" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <text x="751" y="278" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2937">Muda o tempo todo</text>
+  <text x="751" y="300" text-anchor="middle" font-size="12.5" fill="#4b5563">a cada INSERT, UPDATE</text>
+  <text x="751" y="318" text-anchor="middle" font-size="12.5" fill="#4b5563">ou DELETE</text>
+  <text x="751" y="350" text-anchor="middle" font-size="12.5" fill="#1d5634" font-style="italic">"o estado atual dos dados"</text>
+</svg>

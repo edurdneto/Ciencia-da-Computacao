@@ -1,11 +1,11 @@
-# Lista 01 · SQL básico
+# Lista 03 · SQL básico
 
 !!! info "Entrega"
     **Prazo:** [dd/mm/aaaa, 23h59] · **Valor:** [x pontos] · **Como entregar:** [ex.: GitHub Classroom, SIGAA, e-mail]
 
     Entregue um arquivo `lista01.sql` com cada consulta precedida de um comentário com o número da questão (ex.: `-- Questão 3`).
 
-**Conteúdo:** [Aula 01](../aulas/01-introducao.md) e [Aula 02](../aulas/02-sql-consultas.md).
+**Conteúdo:** [Aula 02](../aulas/02-fundamentos-sgbd.md) (Parte A) e [Aula 10](../aulas/10-sql-consultas.md) (Partes B e C).
 **Banco:** todas as questões usam o banco [`universidade`](../index.md#banco-de-exemplo-universidade).
 
 ## Parte A — Conceitos
