@@ -4,7 +4,7 @@ site_url: https://edurdneto.github.io/Ciencia-da-Computacao/
 repo_url: https://github.com/edurdneto/Ciencia-da-Computacao
 repo_name: edurdneto/Ciencia-da-Computacao
 edit_uri: edit/main/docs/
-copyright: Material didático das disciplinas de Sistemas Operacionais e Fundamentos de Banco de Dados
+copyright: Prof. Dr. Eduardo Rodrigues Duarte Neto · Material didático de Sistemas Operacionais e Fundamentos de Banco de Dados
 
 theme:
   name: material
