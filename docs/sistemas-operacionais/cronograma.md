@@ -1,23 +1,18 @@
 # Cronograma — Sistemas Operacionais
 
-<!-- PROFESSOR: troque "Semana N" pelas datas reais e ajuste os temas. Quando publicar uma aula, transforme o tema em link. -->
+<!-- PROFESSOR: troque "Semana N" pelas datas reais e ajuste a distribuição das unidades. -->
 
-| Data | Aula | Tema | Entregas |
+| Data | Unidade | Tema | Slides |
 |---|---|---|---|
-| Semana 1 | 01 | [Introdução aos sistemas operacionais](aulas/01-introducao.md) | |
-| Semana 2 | 02 | [Processos](aulas/02-processos.md) | |
-| Semana 3 | 03 | Threads | [Lista 01](listas/lista-01.md) |
-| Semana 4 | 04 | Comunicação entre processos (pipes, sinais) | |
-| Semana 5 | 05 | Escalonamento de CPU | |
-| Semana 6 | 06 | Sincronização: condições de corrida e mutex | Lista 02 |
-| Semana 7 | 07 | Semáforos e problemas clássicos | |
-| Semana 8 | 08 | Deadlocks | Lista 03 |
-| Semana 9 | — | **Prova 1** | |
-| Semana 10 | 09 | Gerência de memória: endereçamento e alocação | |
-| Semana 11 | 10 | Paginação e TLB | |
-| Semana 12 | 11 | Memória virtual e substituição de páginas | Lista 04 |
-| Semana 13 | 12 | Sistemas de arquivos | |
-| Semana 14 | 13 | Entrada e saída | Trabalho prático |
-| Semana 15 | 14 | Virtualização e segurança | Lista 05 |
+| Semana 1–2 | [1](unidades/unidade-1.md) | Introdução: histórico, arquitetura e tipos de S.O | [PDF](arquivos/unidade-1.pdf) |
+| Semana 3–4 | [2](unidades/unidade-2.md) | Estruturas do S.O: serviços, chamadas de sistema, projeto, estrutura, depuração e inicialização | [PDF](arquivos/unidade-2.pdf) |
+| Semana 5–6 | [3](unidades/unidade-3.md) | Processos: conceito, estados, scheduling, operações e comunicação interprocessos | [PDF](arquivos/unidade-3.pdf) |
+| Semana 7 | [4](unidades/unidade-4.md) | Threads: visão geral, programação multicore e modelos de multithreading | [PDF](arquivos/unidade-4.pdf) |
+| Semana 8 | — | **Prova 1** | |
+| Semana 9–10 | [5](unidades/unidade-5.md) | Sincronização: seção crítica, Peterson, semáforos, monitores e jantar dos filósofos | [PDF](arquivos/unidade-5.pdf) |
+| Semana 11–12 | [6](unidades/unidade-6.md) | Scheduling da CPU: critérios e algoritmos (FCFS, SJF, prioridades, RR, filas multiníveis) | [PDF](arquivos/unidade-6.pdf) |
+| Semana 13–15 | — | [conteúdo a definir] | |
 | Semana 16 | — | **Prova 2** | |
 | Semana 17 | — | Recuperação / exame final | |
+
+Entregas: [Lista 01](listas/lista-01.md) · [prazo a definir]

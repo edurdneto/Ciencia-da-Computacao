@@ -88,9 +88,13 @@ nav:
   - Sistemas Operacionais:
       - sistemas-operacionais/index.md
       - Cronograma: sistemas-operacionais/cronograma.md
-      - Aulas:
-          - "Aula 01 · Introdução aos SOs": sistemas-operacionais/aulas/01-introducao.md
-          - "Aula 02 · Processos": sistemas-operacionais/aulas/02-processos.md
+      - Unidades:
+          - "Unidade 1 · Introdução": sistemas-operacionais/unidades/unidade-1.md
+          - "Unidade 2 · Estruturas do S.O": sistemas-operacionais/unidades/unidade-2.md
+          - "Unidade 3 · Processos": sistemas-operacionais/unidades/unidade-3.md
+          - "Unidade 4 · Threads": sistemas-operacionais/unidades/unidade-4.md
+          - "Unidade 5 · Sincronização": sistemas-operacionais/unidades/unidade-5.md
+          - "Unidade 6 · Scheduling da CPU": sistemas-operacionais/unidades/unidade-6.md
       - Listas de exercícios:
           - "Lista 01 · Processos": sistemas-operacionais/listas/lista-01.md
       - Materiais: sistemas-operacionais/materiais.md

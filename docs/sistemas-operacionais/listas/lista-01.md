@@ -5,7 +5,10 @@
 
     Entregue um único `.pdf` com as respostas teóricas e os arquivos `.c` das questões práticas.
 
-**Conteúdo:** [Aula 01](../aulas/01-introducao.md) e [Aula 02](../aulas/02-processos.md).
+**Conteúdo:** [Unidade 2 · Estruturas do S.O](../unidades/unidade-2.md) (chamadas de sistema) e [Unidade 3 · Processos](../unidades/unidade-3.md).
+
+!!! tip "Exemplos para começar"
+    Exemplos em C de `fork()`, `wait()` e `exec()` estão em [`codigo/sistemas-operacionais/aula-02`](https://github.com/edurdneto/Ciencia-da-Computacao/tree/main/codigo/sistemas-operacionais/aula-02).
 
 ## Parte A — Teoria
 

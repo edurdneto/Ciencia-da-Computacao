@@ -65,3 +65,51 @@
 
 /* Figuras clicáveis abrem em tamanho cheio */
 .md-typeset figure a:has(img) { cursor: zoom-in; }
+
+/* Slides em PDF embutidos nas páginas das unidades */
+.pdf-slides {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin: 1em 0;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background: var(--md-code-bg-color);
+}
+.pdf-slides iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* "Slides 3–21" ao lado de cada parte do resumo */
+.slides-ref {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin: -0.4em 0 0.6em;
+}
+.slides-ref a::before {
+  content: "📑 ";
+}
+
+/* Fórmula simples (Lei de Amdahl) sem depender de biblioteca de matemática */
+.formula {
+  font-size: 1.05rem;
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: center;
+}
+.frac {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+}
+.frac > span:first-child {
+  border-bottom: 1px solid currentColor;
+  padding: 0 0.4em;
+}

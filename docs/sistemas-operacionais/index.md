@@ -32,6 +32,36 @@ Usaremos **Linux** e a linguagem **C**. Você precisa de:
     - **macOS:** a maioria dos exemplos funciona (instale as *Command Line Tools* com `xcode-select --install`), mas alguns detalhes mudam. Na dúvida, use uma máquina virtual Linux.
     - **Sem instalar nada:** use o [GitHub Codespaces](https://github.com/features/codespaces) no próprio repositório.
 
+## Unidades
+
+<div class="grid cards" markdown>
+
+-   **[Unidade 1 · Introdução](unidades/unidade-1.md)**
+
+    Histórico, o que fazem os S.Os, arquitetura e tipos de S.O.
+
+-   **[Unidade 2 · Estruturas do S.O](unidades/unidade-2.md)**
+
+    Serviços, chamadas de sistema, projeto, estrutura, depuração e boot.
+
+-   **[Unidade 3 · Processos](unidades/unidade-3.md)**
+
+    Estados, PCB, escalonadores, operações e comunicação interprocessos.
+
+-   **[Unidade 4 · Threads](unidades/unidade-4.md)**
+
+    Threads, programação multicore, Lei de Amdahl e modelos de multithreading.
+
+-   **[Unidade 5 · Sincronização](unidades/unidade-5.md)**
+
+    Seção crítica, Peterson, semáforos, monitores e jantar dos filósofos.
+
+-   **[Unidade 6 · Scheduling da CPU](unidades/unidade-6.md)**
+
+    Critérios e algoritmos: FCFS, SJF, prioridades, Round-Robin e filas multiníveis.
+
+</div>
+
 ## Avaliação
 
 | Avaliação | Peso | Conteúdo |
